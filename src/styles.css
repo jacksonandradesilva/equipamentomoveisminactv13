@@ -447,8 +447,11 @@ tbody tr:hover {
   background: #5cb85c;
 }
 
-.status-standby {
+.status-restricao {
   background: #f0ad4e;
+}
+.status-preventiva {
+  background: #2d6cdf;
 }
 
 .status-aguardandoMaterial {
