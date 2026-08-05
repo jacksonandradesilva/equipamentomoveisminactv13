@@ -445,6 +445,7 @@ tbody tr:hover {
 
 .status-liberado {
   background: #5cb85c;
+  animation: liberadoBlink 1s linear infinite;
 }
 
 .status-restricao {
@@ -736,5 +737,17 @@ tbody tr:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes liberadoBlink {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 rgba(46, 143, 70, 0);
+  }
+
+  50% {
+    opacity: 0.35;
+    box-shadow: 0 0 12px rgba(46, 143, 70, 0.75);
   }
 }
